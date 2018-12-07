@@ -21,7 +21,7 @@ async def on_ready():
 	print('--------')
 	print('--------')
 	print('Started Master joker') #add_your_bot_name_here
-	return await client.change_presence(game=discord.Game(name='Master play premium | for m! ')) #add_your_bot_status_here
+	return await client.change_presence(game=discord.Game(name='Master play premium | for m!')) #add_your_bot_status_here
 
 def is_owner(ctx):
     return ctx.message.author.id == "429301779981795338" #replace_it_with_your_discord_id
@@ -211,7 +211,7 @@ async def setuplog(ctx):
       server = ctx.message.server
       everyone_perms = discord.PermissionOverwrite(send_messages=False, read_messages=True)
       everyone = discord.ChannelPermissions(target=server.default_role, overwrite=everyone_perms)
-      await client.create_channel(server, 'Masterpremium-log',everyone)
+      await client.create_channel(server, 'masterpremium-log',everyone)
 
 
 
@@ -539,7 +539,7 @@ async def clear(ctx, number):
 @client.event
 async def on_message_delete(message):
     if not message.author.bot:
-      channelname = 'soyalp-log'
+      channelname = 'masterpremium-log'
       logchannel=None
       for channel in message.server.channels:
         if channel.name == channelname:
