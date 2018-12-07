@@ -286,7 +286,7 @@ async def Member(ctx, user:discord.Member,):
 async def ownerinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Bot Name- Master play premium", color=0x00ff00)
     embed.set_footer(text="Master play premium")
-    embed.set_author(name=" Bot Owner Name- Master 'joker,429301779981795338")
+    embed.set_author(name="Bot Owner Name- Master joker,429301779981795338")
     embed.add_field(name="Site- coming soon...", value="Thanks for adding our bot", inline=True)
     await client.say(embed=embed)
 
